@@ -5,12 +5,18 @@ import { useState } from "react";
 import { Col, Row } from "react-bootstrap";
 // import About from "./Home";
 import {
+  AiFillGithub,
+  AiOutlineTwitter,
+  AiFillInstagram,
+  AiOutlineMail,
+} from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
+import {
   DiJavascript1,
   DiReact,
   DiNodejs,
-  // DiMongodb,
   DiPython,
-  // DiGit,
+
 } from "react-icons/di";
 
 
@@ -34,7 +40,7 @@ function BasicProfile() {
         <div>
              <div class="wave"></div>
         </div>
-      <div class="row">
+    <div class="row">
     <div class="column1">
         <h1 style={{ paddingBottom: 15 }}>
                 Hi There!
@@ -52,7 +58,7 @@ function BasicProfile() {
      </div>
     <div class="row">
     <div class="column3">
-    <img src="img2.svg" alt="" width="500px" height="400px"></img>
+    <img src="image183 - Copy.png" alt="" width="500px" height="400px"></img>
      </div>
      <div class="column4">
      <div class="Introduce">
@@ -86,18 +92,6 @@ function BasicProfile() {
       <Col xs={4} md={2} className="tech-icons">
           Java
       </Col>
-      {/* <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
-      </Col> */}
       <Col xs={4} md={2} className="tech-icons">
        <DiPython />
       </Col>
@@ -105,7 +99,45 @@ function BasicProfile() {
         JQuery
       </Col>
     </Row>
-          </section>
+     </section>
+     <footer>
+     <div class="footer-content">
+    <p class="text"><strong>FIND ME ON 🤝🏻 </strong> </p>
+<ul class="socials">
+    <li> <a
+                  href="https://github.com/yaswanth9399/portfolio"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                ><AiFillGithub/></a></li>
+    <li> <a
+                  href="https://github.com/yaswanth9399/portfolio"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                ><AiOutlineTwitter/></a></li>
+    <li><a
+                  href="https://github.com/yaswanth9399/portfolio"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                ><AiFillInstagram/></a></li>
+    <li><a
+                  href="https://github.com/yaswanth9399/portfolio"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                ><FaLinkedinIn/></a></li>
+    <li><a
+                  href="https://github.com/yaswanth9399/portfolio"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                ><AiOutlineMail/></a></li>
+ </ul>
+</div>
+     </footer>
+
       </>
      
     );
