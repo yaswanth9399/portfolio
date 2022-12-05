@@ -1,11 +1,18 @@
 
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.css';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
 import { useState } from "react";
+import { Col, Row } from "react-bootstrap";
 // import About from "./Home";
+import {
+  DiJavascript1,
+  DiReact,
+  DiNodejs,
+  // DiMongodb,
+  DiPython,
+  // DiGit,
+} from "react-icons/di";
+
 
 <link
   rel="stylesheet"
@@ -24,22 +31,11 @@ function CurrentWorking() {
 function BasicProfile() {
     return (
       <>
-        <Navbar sticky="top" bg="dark" variant="dark">
-          <Container>
-            <Navbar.Brand href="#Home">Navbar</Navbar.Brand>
-            <Nav className="me-auto">
-              <Nav.Link href="#Home">Home</Nav.Link>
-              <Nav.Link href="#Projects">Projects</Nav.Link>
-              <Nav.Link href="#Resume">Resume</Nav.Link>
-            </Nav>
-          </Container>
-        </Navbar> 
-        <br />
         <div>
              <div class="wave"></div>
         </div>
       <div class="row">
-    <div class="column">
+    <div class="column1">
         <h1 style={{ paddingBottom: 15 }}>
                 Hi There!
                 <span role="img" aria-labelledby="wave">
@@ -52,9 +48,64 @@ function BasicProfile() {
                 <CurrentWorking />
         </h1>
     </div>
-    <div class="column"><img src="yash.jpg" alt="" width="400" height="400"></img></div>
+    <div class="column2"><img src="avatar.png" alt="" width="300" height="280"></img></div>
      </div>
+    <div class="row">
+    <div class="column3">
+    <img src="img2.svg" alt="" width="500px" height="400px"></img>
+     </div>
+     <div class="column4">
+     <div class="Introduce">
+      <section>
+     <strong><h1 class="skill">INTRODUCE</h1></strong>
+        <p>I fell in love with programming and I have at least learnt something, I think… 🤷‍♂️</p>
+
+        <p>I am fluent in classics like C++, Javascript and Python.</p>
+
+        <p>My field of Interest's are building new  Web Technologies </p>
+     </section>
+     </div>
+      </div>
+    </div>
      
+     <h1 class="skill">Professional <strong>Skillset</strong> </h1>
+     <section id="skills">
+          <Row style={{ justifyContent: "center", paddingBottom: "50px", color: "#dee2e6"}}>
+      <Col xs={4} md={2} className="tech-icons">
+        C
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiJavascript1 />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiNodejs />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiReact />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+          Java
+      </Col>
+      {/* <Col xs={4} md={2} className="tech-icons">
+        <DiMongodb />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiNextdotjs />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiGit />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiFirebase />
+      </Col> */}
+      <Col xs={4} md={2} className="tech-icons">
+       <DiPython />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        JQuery
+      </Col>
+    </Row>
+          </section>
       </>
      
     );
