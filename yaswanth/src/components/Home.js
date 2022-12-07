@@ -27,8 +27,9 @@ import {
   crossorigin="anonymous"
 />
 
+
 function CurrentWorking() {
-    const [job, setJob] = useState("Asst System Engineer");
+    const [job, setJob] = useState("Asst System123 Engineer");
     return(<><h1>{job}! </h1><button
     onClick={() => setJob("SFCC Developer")}
   >Working as</button> </>);
@@ -123,7 +124,7 @@ function BasicProfile() {
                   className="icon-colour  home-social-icons"
                 ><AiFillInstagram/></a></li>
     <li><a
-                  href="https://github.com/yaswanth9399/portfolio"
+                  href="https://www.linkedin.com/in/yaswanth-potnuru-709425167"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"

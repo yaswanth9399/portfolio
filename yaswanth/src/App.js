@@ -1,16 +1,29 @@
 import React from 'react';
 import Home from "./components/Home";
+import Resume from "./components/Resume";
+import About from "./components/About";
 import NavBar from "./components/Navbar";
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+} from "react-router-dom";
 function App() {
   return (   
-    <div className="App">  
-    <NavBar/>
-    <div>
-    <Home/>
+    <Router>
+    <div className="App">
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {/* <Route path="/project" element={<Projects />} /> */}
+        <Route path="/about" element={<About />} />
+        {/* <Route path="*" element={<Navigate to="/"/>} /> */}
+        <Route path="/resume" element={<Resume/>} />
+      </Routes>
+      {/* <Footer /> */}
     </div>
-      
-    </div>
+  </Router>
   );
 }
 
