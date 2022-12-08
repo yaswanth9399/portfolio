@@ -3,6 +3,7 @@ import Home from "./components/Home";
 import Resume from "./components/Resume";
 import About from "./components/About";
 import NavBar from "./components/Navbar";
+import Footer from "./components/Footer";
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -21,7 +22,7 @@ function App() {
         {/* <Route path="*" element={<Navigate to="/"/>} /> */}
         <Route path="/resume" element={<Resume/>} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   </Router>
   );
