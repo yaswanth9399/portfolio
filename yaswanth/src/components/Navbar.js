@@ -17,7 +17,7 @@ function Navbar1(){
         <Nav.Link  as={Link} to="/" className="header-icon" href="#Home"><FaHome /> HOME</Nav.Link>
         <Nav.Link  as={Link} to="/about" className="header-icon"><AiOutlineUser/> ABOUT</Nav.Link>
         <Nav.Link  as={Link} to="/resume" className="header-icon" href="#Resume"><CgFileDocument/> RESUME</Nav.Link>
-        <Nav.Link  as={Link} to="/projects" className="header-icon" href="#Projects"><AiOutlineFundProjectionScreen/>PROJECTS</Nav.Link>
+        <Nav.Link  as={Link} to="/project" className="header-icon" href="#Projects"><AiOutlineFundProjectionScreen/>PROJECTS</Nav.Link>
       </Nav>
     </Container>
   </Navbar> 

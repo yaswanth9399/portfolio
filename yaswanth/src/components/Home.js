@@ -22,7 +22,7 @@ import {
 
 
 function CurrentWorking() {
-    const [job, setJob] = useState("Asst System123 Engineer");
+    const [job, setJob] = useState("Asst System Engineer");
     return(<><h1>{job}! </h1><button
     onClick={() => setJob("SFCC Developer")}
   >Working as</button> </>);
@@ -51,23 +51,27 @@ function BasicProfile() {
     <div class="column2"><img src="avatar.png" alt="" width="300" height="280"></img></div>
      </div>
     <div class="row">
-    <div class="column3">
+    <div class="column3 ">
     <img src="image183 - Copy.png" alt="" width="500px" height="400px"></img>
      </div>
      <div class="column4">
      <div class="Introduce">
-      <section>
+      <section class ="sectiontext">
      <strong><h1 class="skill">INTRODUCE</h1></strong>
-        <p>I fell in love with programming and I have at least learnt something, I think… 🤷‍♂️</p>
+        <p >I fell in love with programming and I have at least learnt something, I think… 🤷‍♂️</p>
 
-        <p>I am fluent in classics like C++, Javascript and Python.</p>
+        <p>I am fluent in classics like Java .</p>
+        <p>Since I was a kid, I have loved and excelled in programming, mathematics, and problem solving.</p>
 
-        <p>My field of Interest's are building new  Web Technologies </p>
+<p> I am experienced in programming languages including C,Java, Python, JavaScript, and MySQL.</p>
+
+
      </section>
      </div>
       </div>
     </div>
-     
+    <br></br>
+     <div class="Professional">
      <h1 class="skill">Professional <strong>Skillset</strong> </h1>
      <section id="skills">
           <Row style={{ justifyContent: "center", paddingBottom: "50px", color: "#dee2e6"}}>
@@ -94,7 +98,7 @@ function BasicProfile() {
       </Col>
     </Row>
      </section>
-
+     </div>
       </>
      
     );

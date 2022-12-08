@@ -4,6 +4,7 @@ import Resume from "./components/Resume";
 import About from "./components/About";
 import NavBar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Project from "./components/Project";
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -17,7 +18,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/project" element={<Projects />} /> */}
+        <Route path="/project" element={<Project />} />
         <Route path="/about" element={<About />} />
         {/* <Route path="*" element={<Navigate to="/"/>} /> */}
         <Route path="/resume" element={<Resume/>} />
