@@ -34,6 +34,7 @@ const App = () => {
     
 	return (
 		<>
+		<div class="resume-class">
 			<center>
 				<h1>Welcome</h1>
 				<h3>Click on below button to download PDF file</h3>
@@ -42,6 +43,7 @@ const App = () => {
 				</button>
                 <div><br></br></div>
 			</center>
+		</div>
 		</>
 	);
 

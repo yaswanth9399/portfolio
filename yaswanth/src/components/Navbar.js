@@ -1,27 +1,95 @@
-import React from "react";
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import React, { useState } from "react";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
-import { FaHome } from "react-icons/fa";
-import { CgFileDocument } from "react-icons/cg";
 import {
-    AiOutlineFundProjectionScreen,
-    AiOutlineUser,
-  } from "react-icons/ai";
-function Navbar1(){
-  return (
-    <Navbar  >
-    <Container>
-      <Nav className="header">
-        <Nav.Link  as={Link} to="/" className="header-icon" href="#Home"><FaHome /> HOME</Nav.Link>
-        <Nav.Link  as={Link} to="/about" className="header-icon"><AiOutlineUser/> ABOUT</Nav.Link>
-        <Nav.Link  as={Link} to="/resume" className="header-icon" href="#Resume"><CgFileDocument/> RESUME</Nav.Link>
-        <Nav.Link  as={Link} to="/project" className="header-icon" href="#Projects"><AiOutlineFundProjectionScreen/>PROJECTS</Nav.Link>
-      </Nav>
-    </Container>
-  </Navbar> 
-  );
+ 
+  AiOutlineHome,
+  AiOutlineFundProjectionScreen,
+  AiOutlineUser,
+} from "react-icons/ai";
+
+import { CgFileDocument } from "react-icons/cg";
+
+function NavBar() {
+  const [expand, updateExpanded] = useState(false);
+  const [navColour, updateNavbar] = useState(false);
+
+  function scrollHandler() {
+    if (window.scrollY >= 20) {
+      updateNavbar(true);
+    } else {
+      updateNavbar(false);
+    }
   }
 
- export default Navbar1;
+  window.addEventListener("scroll", scrollHandler);
+
+  return (
+    <Navbar
+      expanded={expand}
+      fixed="sticky"
+      expand="md"
+      className={navColour ? "sticky" : "navbar"}
+    >
+      <Container>
+        <Navbar.Toggle
+          aria-controls="responsive-navbar-nav"
+          onClick={() => {
+            updateExpanded(expand ? false : "expanded");
+          }}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </Navbar.Toggle>
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="ms-auto" defaultActiveKey="#home">
+            <Nav.Item>
+              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+                <AiOutlineHome style={{ marginBottom: "2px" ,fontSize:"28px" }} /><span style={{ fontSize: "28px" }}>Home</span> 
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/about"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiOutlineUser style={{ marginBottom: "2px",fontSize:"28px"  }} /><span style={{ fontSize: "28px" }}> About</span>
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/project"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiOutlineFundProjectionScreen
+                  style={{ marginBottom: "2px",fontSize:"28px"  }}
+                />{" "}
+                <span style={{ fontSize: "28px" }}>Projects </span>
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/resume"
+                onClick={() => updateExpanded(false)}
+              >
+                <CgFileDocument style={{ marginBottom: "2px",fontSize:"28px" }} /> <span style={{ fontSize: "28px" }}>Resume</span>
+              </Nav.Link>
+            </Nav.Item>
+
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
+}
+
+export default NavBar;

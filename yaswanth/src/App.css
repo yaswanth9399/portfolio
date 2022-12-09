@@ -109,7 +109,10 @@ img {
   margin-left: 50rem;
 
 }
-
+.imgicon {
+  border-radius: 50%;
+  margin-left: 10px;
+}
 .header .header-icon {
   float: right;
   text-align: center;
@@ -338,15 +341,82 @@ height:50rem;
 margin-top: 10rem;
 }
 
+/* @media (max-width: 800px) {
+  .menuicon{
+    display: block;
+    margin-left: 1.5rem;
+    font-size: 40px;
+  }
+} */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .contain {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .contain::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+@media (max-width: 800px) {
+.p-4 {
+  padding: 1.5rem !important;
+  margin-bottom: 800px;
+}
+}
 @media (max-width: 1200px) {
+  .resume-class{
+    margin-top: 150px;
+
+  }
+  
+ .card{
+  margin-bottom: 10px;
+ }
+  .col1{
+    height: auto;
+    width: fit-content;
+  }
+  .col2{
+    height: auto;
+    width: fit-content;
+    margin-top: 5rem;
+  }
+  .column2 {
+    display:inline-block;
+  }
   .column3 {
     width:100%;
+    margin-top: -150px;
   }
   .column4 {
     width:100%;
   }
   .Professional{
     margin-top: 40rem;
+    margin-left: 3.5rem;
   }
   .footer{
     margin-top: 15rem;
@@ -361,9 +431,52 @@ margin-top: 10rem;
     /* padding-top: 100px; */
     color: #fff;
   }
+  .menuicon{
+    display: block;
+    margin-left: 1.5rem;
+    font-size: 40px;
+  }
+ 
+}
+
+.navbar-toggler {
+  background-color: black;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  padding: 0.25rem 0.75rem;
+  transition: box-shadow .15s ease-in-out;
+}
+.navbar-toggler span {
+  background-color: #be50f4!important;
+  display: block!important;
+  height: 4px!important;
+  left: 0!important;
+  margin-bottom: 5px!important;
+  margin-top: 5px!important;
+  opacity: 1!important;
+  -webkit-transform: rotate(0deg)!important;
+  transform: rotate(0deg)!important;
+  width: 27px!important;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+@media (max-width: 767px)
+{
+.navbar {
+    background-color:#202e3b45;
+    font-size: 1.4rem!important;
+    padding: 1rem 2rem!important;
+    width:fit-content;
+}
 }
 
 @media (min-width: 1201px) {
+  .menuicon{
+    display: none;
+  }
   .column3 {
     width:30%;
   }
@@ -389,3 +502,6 @@ margin-top: 10rem;
     max-width: fit-content;
 }
 } */
+.headericon{
+ margin-left: 0%;
+}

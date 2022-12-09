@@ -9,8 +9,9 @@ function ProjectNames() {
     return (  
       <div className="App">  
     <Container className='p-4 cards'>  
-    <div class="row">
-    <Col md="4"> 
+    <div class="row cardrow">
+      
+      <Col md="4"> 
     <div class="card-colour">
     <Card>  
     <Card.Img variant="top" src={img1} class="cardimg " />  
@@ -27,7 +28,7 @@ using Naive Bayes classification algorithm.
     </div> 
       </Col>  
 
-    <Col md="4">  
+      <Col md="4">  
     <div class="card-colour">
     <Card>  
     <Card.Img variant="top" src={img2} />  
@@ -46,7 +47,7 @@ used for the backend to connect to the database<br>
   </div>
       </Col>  
 
-    <Col md="4">  
+      <Col md="4">  
     <div class="card-colour">
     <Card>  
     <Card.Img variant="top" src={img3} />  
