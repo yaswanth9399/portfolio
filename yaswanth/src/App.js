@@ -10,6 +10,7 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
+  Navigate
 } from "react-router-dom";
 function App() {
   return (   
@@ -17,10 +18,10 @@ function App() {
     <div className="App">
       <NavBar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/project" element={<Project />} />
         <Route path="/about" element={<About />} />
-        {/* <Route path="*" element={<Navigate to="/"/>} /> */}
+        <Route path="*" element={<Navigate to="/home"/>} />
         <Route path="/resume" element={<Resume/>} />
       </Routes>
       <Footer />

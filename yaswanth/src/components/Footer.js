@@ -3,7 +3,7 @@ import {
   AiFillGithub,
   AiOutlineTwitter,
   AiFillInstagram,
-  AiOutlineMail,
+  // AiOutlineMail,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
@@ -38,12 +38,12 @@ function Footer1(){
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 ><FaLinkedinIn/></a></li>
-    <li><a
+    {/* <li><a
                   href="https://mail.google.com/mail/u/0/#inbox"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
-                ><AiOutlineMail/></a></li>
+                ><AiOutlineMail/></a></li> */}
  </ul>
 </div>
      </footer>

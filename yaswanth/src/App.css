@@ -413,6 +413,13 @@ margin-top: 10rem;
   }
   .column4 {
     width:100%;
+    margin-left: -40px;
+  }
+  .avatar{
+width:200;
+  }
+  .homeimage{
+width:400px;
   }
   .Professional{
     margin-top: 40rem;

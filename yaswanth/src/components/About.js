@@ -1,14 +1,7 @@
 
 import React from "react";
 import { Container} from "react-bootstrap";
-// import myImg from "../../Assets/avatar.svg";
-// import Tilt from "react-parallax-tilt";
-// import {
-//   AiFillGithub,
-//   AiOutlineTwitter,
-//   AiFillInstagram,
-// } from "react-icons/ai";
-// import { FaLinkedinIn } from "react-icons/fa";
+import aboutimg from '../resources/Cross-platform software-amico.svg' 
 
 function Home2() {
   return (
@@ -17,13 +10,13 @@ function Home2() {
     <row>
         <div class="col1"><h1 class="heading1"><strong>Know Who <span class="highlet">I'M</span></strong></h1>
         <p class="about">I am Yaswanth ,currently working in TCS . 
-          I loved to become a full stack developer because now a days most useful techonolgys are web developing(HTML,css,js,anyone backend technology)
+          I loved to become a full stack developer because now a days most useful technologies are WEB developing(HTML,css,js,anyone backend technology)
           ,machine learning,deep learning and mysql these are minimum technologies to become a full stack developer.</p>
           <p class="about">I love to explore how a MACHINE is LEARNING and how can I use my adaptive problem-solving skills to help those ARTIFICAL brains boost their INTELLIGENCE. And yes, if you own a STARTUP or if you are HIRING, let's connect. 
             I love contributing to the success of these rising champions aka the startups!</p>
         </div>
 
-        <div class="col2"><img src="Cross-platform software-amico.svg" alt="" width="400" height="400"></img></div>
+        <div class="col2"><img src={aboutimg} alt="" width="400" height="400"></img></div>
     </row>
     </div>
 <br></br>

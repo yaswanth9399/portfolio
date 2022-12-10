@@ -3,6 +3,9 @@ import React from "react";
 import 'bootstrap/dist/css/bootstrap.css';
 import { useState } from "react";
 import { Col, Row } from "react-bootstrap";
+import avatar from '../resources/avatar.png'  
+import homeimg from '../resources/image183 - Copy.png'  
+
 // import About from "./Home";
 import {
   DiJavascript1,
@@ -48,11 +51,11 @@ function BasicProfile() {
                 <CurrentWorking />
         </h1>
     </div>
-    <div class="column2"><img src="avatar.png" alt="" width="300" height="280"></img></div>
+    <div class="column2"><img class="avatar" src={avatar} alt="" width="300" height="280"></img></div>
      </div>
     <div class="row">
     <div class="column3 ">
-    <img src="image183 - Copy.png" alt="" width="500px" height="400px"></img>
+    <img src={homeimg} class="homeimage"  alt="" width="500px" height="400px"></img>
      </div>
      <div class="column4">
      <div class="Introduce">
