@@ -26,9 +26,7 @@ import {
 
 function CurrentWorking() {
     const [job, setJob] = useState("Asst System Engineer");
-    return(<><h1>{job}! </h1><button
-    onClick={() => setJob("SFCC Developer")}
-  >Working as</button> </>);
+    return(<><h1>{job}! </h1> </>);
 }
 
 function BasicProfile() {
@@ -51,7 +49,7 @@ function BasicProfile() {
                 <CurrentWorking />
         </h1>
     </div>
-    <div class="column2"><img class="avatar" src={avatar} alt="" width="300" height="280"></img></div>
+    <div class="column2"><img class="avatar" src={avatar} alt="" width="200" height="280"></img></div>
      </div>
     <div class="row">
     <div class="column3 ">
