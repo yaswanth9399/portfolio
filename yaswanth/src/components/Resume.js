@@ -1,6 +1,6 @@
 import React ,{ useState }from "react";
 // import { useEffect }from "react";
-import Pdf from '../resources/Yaswanth Potnuru RESUME.pdf';
+import Pdf from '../resources/Yaswanth_Potnuru_Resume.pdf';
 
 const App = () => {
     const [style, setStyle] = useState("icon-colour  home-social");
